@@ -12,6 +12,12 @@ function calculate(){
   else if (0 < parseInt(numInput) && input == "cornstarch" || input == "Cornstarch" || input == "CORNSTARCH") {
     text = numInput*3 + " tbsp. flour. However, be careful, as this substitution may not work in all cases.";
   }
+  else if (0 < parseInt(numInput) && input == "baking soda" || input == "Baking Soda" || input == "BAKING SODA" || input == "Baking soda") {
+    text = numInput*4 + " tbsp. baking powder.";
+  }
+  else if (0 < parseInt(numInput) && input == "baking powder" || input == "Baking Powder" || input == "BAKING POWDER" || input == "Baking powder") {
+    text = numInput*1/4 + " tbsp. baking soda.";
+  }
   else {
     text = "Sorry, we don't have substitutions for that ingredient yet!";
   }
