@@ -1,6 +1,3 @@
-body {
-  background-color: pink;
-}
 
 /*#banner {
   background-url:
@@ -15,7 +12,7 @@ body {
 
 h1 {
   font-family: 'Dancing Script', cursive;
-  color: brown;
+  color: saddlebrown;
   font-size: 10;
 }
 
@@ -27,4 +24,17 @@ h2 {
 h3 {
   font-size: 20;
   color: white;
+}
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+body {margin-left:40px;
+  background-image: url(foodpic.png);
+  background-color: pink;
+  /*-moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
 }
