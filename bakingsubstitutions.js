@@ -3,10 +3,10 @@ function calculate(){
   input = document.getElementById("word").value;
   text = document.getElementById("word").value;
   numInput = document.getElementById("num").value
-  if (0 < parseInt(numInput) && input ==  "butter") {
+  if (0 < parseInt(numInput) && input ==  "butter" || input == "Butter" || input == "BUTTER") {
     text = numInput*3/4 + " tbsp oil";
   }
-  else if (0 < parseInt(numInput) && input == "oil") {
+  else if (0 < parseInt(numInput) && input == "oil" || input == "Oil" || input == "OIL") {
     text = numInput*4/3 + " tbsp butter";
   }
   else {
@@ -14,4 +14,3 @@ function calculate(){
   }
   document.getElementById("click").innerHTML = text;
 }
-
