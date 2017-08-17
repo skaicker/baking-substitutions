@@ -1,22 +1,17 @@
 function calculate(){
-  var input, text;
+  var input, text, numInput;
   input = document.getElementById("word").value;
-  if (input == "butter" || input == "Butter" || input == "BUTTER") {
-      text = "Oil, applesauce, or pumpkin puree is the way to go!"
-
+  text = document.getElementById("word").value;
+  numInput = document.getElementById("num").value
+  if (0 < parseInt(numInput) && input ==  "butter") {
+    text = numInput*3/4 + " tbsp oil";
   }
-    else if (input == "sugar" || input == "Sugar" || input =="SUGAR") {
-      text = "You can replace sugar with honey!)";
+  else if (0 < parseInt(numInput) && input == "oil") {
+    text = numInput*4/3 + " tbsp butter";
   }
-    else if (input == "cornstarch" || input == "Cornstarch" || input == "CORNSTARCH"){
-       text = "You can substitute flour, but it might not come out well in all cases.";
+  else {
+    text = "Sorry, we don't have substitutions for that ingredient yet!";
   }
-    else if (input == "oil" || input == "Oil" || input == "OIL") {
-      text = "Substitute butter or pumpkin puree!";
-  }
-    else {
-       text = "Sorry, we don't have information for that ingredient yet!";
-     }
-numInput = document.getElementById("num").value
-document.getElementById("click").innerHTML = text;
+  document.getElementById("click").innerHTML = text;
 }
+
