@@ -19,7 +19,7 @@ function calculate(){
     text = numInput*1/4 + " tbsp. baking soda.";
   }
   else if (0 < parseFloat(numInput) && input ==  "vanilla"|| input == "Vanilla" || input == "VANILLA" || input== "vanilla extract" || input == "Vanilla Extract" || input == "VANILLA EXTRACT" || input == "Vanilla extract") {
-    text = numInput + " tbsp. maple syrup (note: 1 tbsp = 3 tsp).";
+    text = numInput + " tbsp. maple syrup.";
   }
   else if (0 < parseFloat(numInput) && input == "cocoa powder" || input == "Cocoa Powder" || input == "COCOA POWDER" || input == "Cocoa powder" || input == "cocoa" || input == "COCOA" || input == "Cocoa") {
     text = numInput*2/3 + " tbsp. chocolate and reduce fat in the recipe by " + numInput*1/3 + " tbsp.";
