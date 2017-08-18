@@ -25,7 +25,7 @@ function calculate(){
     text = numInput*2/3 + " tbsp. chocolate and reduce fat in the recipe by " + numInput*1/3 + " tbsp.";
   }
   else if (0 >= parseInt(numInput)) {
-    text = "Please enter in a value greater than 0!"
+    text = "Please enter in a whole value greater than 0!"
   }
   else {
     text = "Sorry, we don't have substitutions for that ingredient yet!";
