@@ -18,8 +18,11 @@ function calculate(){
   else if (0 < parseInt(numInput) && input == "baking powder" || input == "Baking Powder" || input == "BAKING POWDER" || input == "Baking powder") {
     text = numInput*1/4 + " tbsp. baking soda.";
   }
-  else if (0 < parseInt(numInput) && input == "vanilla extract" || input == "Vanilla Extract" || input == "VANILLA EXTRACT" || input == "Vanilla ex;tract") {
+  else if (0 < parseInt(numInput) && input == "vanilla extract" || input == "Vanilla Extract" || input == "VANILLA EXTRACT" || input == "Vanilla extract") {
     text = numInput + " tbsp. maple syrup (note: 1 tbsp = 3 tsp).";
+  }
+  else if (0 < parseInt(numInput) && input == "cocoa powder" || input == "Cocoa Powder" || input == "COCOA POWDER" || input == "Cocoa powder" || input == "cocoa" || input == "COCOA" || input == "Cocoa") {
+    text = numInput*2/3 + " tbsp. chocolate and reduce fat in the recipe by " + numInput*1/3 + " tbsp.";
   }
   else if (0 >= parseInt(numInput)) {
     text = "Please enter in a value greater than 0!"
