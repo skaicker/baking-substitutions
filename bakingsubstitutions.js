@@ -18,7 +18,7 @@ function calculate(){
   else if (0 < parseInt(numInput) && input == "baking powder" || input == "Baking Powder" || input == "BAKING POWDER" || input == "Baking powder") {
     text = numInput*1/4 + " tbsp. baking soda.";
   }
-  else if (0 < parseInt(numInput) && input == "vanilla extract" || input == "Vanilla Extract" || input == "VANILLA EXTRACT" || input == "Vanilla extract") {
+  else if (0 < parseInt(numInput) && input ==  "vanilla"|| input == "Vanilla" || input == "VANILLA" || input== "vanilla extract" || input == "Vanilla Extract" || input == "VANILLA EXTRACT" || input == "Vanilla extract") {
     text = numInput + " tbsp. maple syrup (note: 1 tbsp = 3 tsp).";
   }
   else if (0 < parseInt(numInput) && input == "cocoa powder" || input == "Cocoa Powder" || input == "COCOA POWDER" || input == "Cocoa powder" || input == "cocoa" || input == "COCOA" || input == "Cocoa") {
