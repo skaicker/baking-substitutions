@@ -7,7 +7,7 @@ function calculate(){
     text = numInput*3/4 + " tbsp. oil or pumpkin puree.";
   }
   else if (0 < parseFloat(numInput) && input == "oil" || input == "Oil" || input == "OIL") {
-    text = numInput*4/3 + " tbsp. butter " + "OR " + numInput + " tbsp. pumpkin puree.";
+    text = numInput*4/3 + " tbsp. butter OR " + numInput + " tbsp. pumpkin puree.";
   }
   else if (0 < parseFloat(numInput) && input == "cornstarch" || input == "Cornstarch" || input == "CORNSTARCH") {
     text = numInput*3 + " tbsp. flour. However, be careful, as this substitution may not work in all cases." + " You can also use " + numInput + " tbsp. arrowroot, or any other pure starch you have.";
@@ -24,8 +24,11 @@ function calculate(){
   else if (0 < parseFloat(numInput) && input == "cocoa powder" || input == "Cocoa Powder" || input == "COCOA POWDER" || input == "Cocoa powder" || input == "cocoa" || input == "COCOA" || input == "Cocoa") {
     text = numInput*2/3 + " tbsp. chocolate and reduce fat in the recipe by " + numInput*1/3 + " tbsp.";
   }
-  else if (0 >= parseFloat(numInput)) {
-    text = "Please enter in a value greater than 0!";
+  else if (0 < parseFloat(numInput) && input == "eggs" || input == "Eggs" || input == "EGGS" || input == "Egg" || input == "egg" || input == "EGG") {
+    text = numInput*4 + " tbsp. applesauce and " + numInput *1/2 + " tsp. baking powder OR " + numInput*4 + " tbsp. mashed banana.";
+  }
+  else if (isNaN(numInput) || 0 >= parseFloat(numInput)) {
+    text = "Please enter in a number value greater than 0!";
   }
   else {
     text = "Sorry, we don't have substitutions for that ingredient yet!";
