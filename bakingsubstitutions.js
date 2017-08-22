@@ -31,7 +31,7 @@ function calculate(){
     text = numInput*3/2 + " tbsp. cocoa powder and add fat in the recipe by " + numInput*3 + " tbsp. However, be careful, since the sugar and fat content vary in different chocolate bars.";
   }
   else if ((0 < parseFloat(numInput)) && ((input == "milk" || input == "Milk") || input == "MILK")){
-    text = numInput + " tbsp. almond, soy, coconut, or rice milk or yogurt OR " + numInput*1/2 + " tbsp. evaporated or condensed milk.";
+    text = numInput + " tbsp. almond, soy, coconut, or rice milk, or plain yogurt OR " + numInput*1/2 + " tbsp. evaporated or condensed milk.";
   }
   else if ((0 < parseFloat(numInput)) && ((input == "cake flour" || input == "Cake Flour") || input == "Cake flour" || input == "CAKE FLOUR")){
     text = numInput + " tbsp. flour, minus " + numInput*1/8 + " tbsp. flour; add back in " + numInput*1/8 + " tbsp. cornstarch.";
