@@ -9,8 +9,8 @@ function calculate(){
   else if ((0 < parseFloat(numInput)) && ((input ==  "butter" || input == "Butter") || input == "BUTTER")) {
     text = numInput*3/4 + " tbsp. oil or pumpkin puree.";
   }
-  else if ((0 < parseFloat(numInput)) && ((input == "oil" || input == "Oil") || input == "OIL")) {
-    text = numInput*4/3 + " tbsp. butter OR " + numInput + " tbsp. pumpkin puree.";
+  else if ((0 < parseFloat(numInput)) && ((input == "oil" || input == "Oil") || input == "OIL" || input == "vegetable oil" || input == "Vegetable oil" || input == "VEGETABLE OIL" || input == "Vegetable Oil")) {
+    text = numInput*4/3 + " tbsp. butter OR " + numInput + " tbsp. pumpkin puree."
   }
   else if ((0 < parseFloat(numInput)) && ((input == "cornstarch" || input == "Cornstarch") || input == "CORNSTARCH")) {
     text = numInput*3 + " tbsp. flour. However, be careful, as this substitution may not work in all cases." + " You can also use " + numInput + " tbsp. arrowroot, or any other pure starch you have.";
