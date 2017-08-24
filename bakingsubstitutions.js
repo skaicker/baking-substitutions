@@ -9,7 +9,7 @@ function calculate(){
   else if ((0 < parseFloat(numInput)) && ((input ==  "butter" || input == "Butter") || input == "BUTTER")) {
     text = numInput*3/4 + " tbsp. oil or pumpkin puree.";
   }
-  else if ((0 < parseFloat(numInput)) && ((input ==  "butter" || input == "Butter") || input == "BUTTER")) {
+  else if ((0 < parseFloat(numInput)) && ((input ==  "eggs" || input == "EGGS") || input == "Eggs" || input == "Egg" || input == "EGGS" ||)) {
     text = numInput*1/4 + " cup applesauce OR " + numInput*1/4 + " cup mashed banana.";
   }
   else if ((0 < parseFloat(numInput)) && ((input == "oil" || input == "Oil") || input == "OIL")) {
